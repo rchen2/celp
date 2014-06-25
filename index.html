@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<title>Section scroller template</title>
+		<title>College Helper</title>
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +27,6 @@
     </div>
     <div class="navbar-collapse collapse" id="navbar-collapsible">
       <ul class="nav navbar-nav navbar-left">
-        <li><a href="#section1">Product</a></li>
         <li><a href="#section2">What</a></li>
         <li><a href="#section3">How</a></li>
         <li><a href="#section4">Mobile</a></li>
@@ -43,9 +42,6 @@
             <span class="input-group-addon" ><span class="glyphicon glyphicon-search"></span> </span>
             <input type="text" class="form-control" placeholder="What are you looking for?">
             <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span> </span>
-            <div class="btn-group SignUpBtn"  >
-              <button type="button" class="btn btn-primary" style="background-color:#1c77a9"><strong>Sign Up</strong></button>
-            </div>
           </div>
 
         </div>
@@ -55,8 +51,15 @@
 </nav>
 
 <section class="container-fluid" id="section1">
-  	<h1 class="text-center v-center">Sectionalize</h1>
-  	<div class="row">
+  <center><img src="assets/example/celpfinal.png" width="400" height="400" class="img-responsive center-block"></center>
+  	<div class="row" >
+      <center><div class="btn-group btn-group-lg">
+          <button type="button" class="btn btn-primary signupbtn" style="background-color:#1c77a9" onclick="modalPop()" ><strong>Sign Up</strong></button>
+      </div></center>
+
+
+
+
     	<div class="col-sm-4">
           <div class="row">
           	<div class="col-sm-10 col-sm-offset-2 text-center"><h3>Robust</h3><p>There is other content and snippets of details or features that can be placed here..</p><i class="fa fa-cog fa-5x"></i></div>
@@ -98,7 +101,7 @@
           <div class="col-xs-6 text-right">Anyhoo, this is just some random blurb of text, and Bootply.com is a playground and code editor for Bootstrap.</div>
         </div>
         <p class="text-center">
-          <img src="/assets/example/img_mtnpeople.png" class="img-responsive center-block ">
+          <img src="assets/example/img_mtnpeople.png" class="img-responsive center-block ">
         </p>
       </div>
    </div>
@@ -108,7 +111,7 @@
 	<h2 class="text-center">Change this Content. Change the world.</h2>
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2">
-      <img src="/assets/example/bg_smartphones.jpg" class="img-responsive center-block ">
+      <img src="assets/example/bg_smartphones.jpg" class="img-responsive center-block ">
       <p class="text-center">Images will scale down proportionately as browser width narrows.</p>
       </div>
     </div>
@@ -214,7 +217,7 @@
 <section class="container-fluid" id="section6">
 	<h2 class="text-center">Do you see what I mean?</h2>
     <p class="text-center lead">Add some compelling information here</p>
-    <img src="/assets/example/bg_iphone.png" class="img-responsive center-block ">
+    <img src="assets/example/bg_iphone.png" class="img-responsive center-block ">
 </section>
 
 <section class="container-fluid" id="section7">
@@ -292,8 +295,16 @@
 </footer>
 
 	<!-- script references -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+    <script src="js/bootbox.min.js"></script>
 		<script src="js/scripts.js"></script>
+    <script>
+      function modalPop() {
+        var some_html = '<img src="assets/example/celpfinal.png" width="100px"/><br />';
+        some_html += "<iframe src=\"https://docs.google.com/forms/d/1GMKLrMaDVZUEcbtU15UGb9Ccc34oajBJvM0j_mZHO2Q/viewform?embedded=true\" width=\"100%\" height=\"350\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading...</iframe>";
+        bootbox.alert(some_html);
+      }
+    </script>
 	</body>
 </html>
