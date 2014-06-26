@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<title>College Helper</title>
+		<title>College Help</title>
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -12,6 +12,16 @@
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<link href="css/styles.css" rel="stylesheet">
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-52305901-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 	</head>
 	<body>
 <nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
@@ -37,9 +47,9 @@
       <form class="navbar-form">
         <div class="form-group" style="display:inline;">
           <div class="input-group"> 
-            <input type="text" class="form-control" placeholder="What's your College?">
+            <input type="text" class="form-control" placeholder="What's your College?" onclick="comingSoon1()">
             <span class="input-group-addon" ><span class="glyphicon glyphicon-search"></span> </span>
-            <input type="text" class="form-control" placeholder="What are you looking for?">
+            <input type="text" class="form-control" placeholder="What are you looking for?" onclick="comingSoon2()">
             <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span> </span>
           </div>
 
@@ -53,13 +63,15 @@
   <center><img src="assets/example/celpfinal.png" width="400" height="400" class="img-responsive center-block"></center>
   	<div class="row" >
 
-
     <h1 class="text-center">Celp is for all students</h1>
 
-      <center><div class="btn-group btn-group-lg">
-          <button type="button" class="btn btn-primary signupbtn" style="background-color:#1c77a9" onclick="modalPop()" ><strong>Sign Up</strong></button>
-      </div></center>
-
+      <center>
+      <div class="btn-group btn-group-lg">
+        <button type="button" class="btn btn-primary signupbtn" style="background-color:#1c77a9" onclick="modalPop()">
+          <strong>Sign Up</strong>
+        </button>
+      </div>
+      </center>
 
     <div class="row">
       <div class="col-sm-6 col-sm-offset-3">
@@ -67,12 +79,10 @@
           <div class="col-xs-6"><center><h2>Work Hard</h2>Find reviews on professors, classes and departments written by students written by you. Make the most out of your college experience!</center></div>
           <div class="col-xs-6 text-right"><center><h2>Play Hard</h2>Don't know what to do on a Saturday night? Think of Celp as your cool upperclassman friend. We give advice on all the best places to eat, party spots and on-campus events.</center></div>
         </div>
-
       </div>
    </div>
 
-
-  	</div>
+  </div>
 </section>
 
 <section class="container-fluid" id="section2">
@@ -80,7 +90,7 @@
   	<div class="col-sm-8 col-sm-offset-2 text-center">
         <h1>What is Celp?</h1>
         <br>
-		<p class="lead">Celp is a review site exclusively for college students. Discover all your campus has to offer!</p>
+		    <p class="lead">Celp is a review site exclusively for college students. Discover all your campus has to offer!</p>
         <br> 
       	<i style="font-size:120px" class="fa fa-leaf fa-5x"></i>
     </div>
@@ -150,6 +160,15 @@
        <i class="fa fa-instagram fa-4x"></i>
       </div>
   </div><!--/row-->
+
+  <h1 class="text-center">Sign up today for an exclusive Celp account!</h1>
+  <center>
+    <div class="btn-group btn-group-lg">
+        <button type="button" class="btn btn-primary signupbtn" style="background-color:#1c77a9" onclick="modalPop()" >
+          <strong>Click here to Sign Up!</strong>
+        </button>
+    </div>
+  </center>
 </section>
 
 <footer id="footer">
@@ -158,10 +177,10 @@
       <div class="col-xs-6 col-sm-6 col-md-3 column">          
           <h4>Information</h4>
           <ul class="nav">
-            <li><a href="about-us.html">Products</a></li>
-            <li><a href="about-us.html">Services</a></li>
-            <li><a href="about-us.html">Benefits</a></li>
-            <li><a href="elements.html">Developers</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Benefits</a></li>
+            <li><a href="#">Developers</a></li>
           </ul> 
         </div>
       <div class="col-xs-6 col-md-3 column">          
@@ -204,6 +223,18 @@
       function modalPop() {
         var some_html = '<img src="assets/example/celpfinal.png" width="100px"/><br />';
         some_html += "<iframe src=\"https://docs.google.com/forms/d/1ANmFeOG2moshcZMuwny53g6FXMzA0QF3eCid4XHzZQE/viewform?embedded=true\" width=\"100%\" height=\"350\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading...</iframe>";
+        bootbox.alert(some_html);
+      }
+
+      function comingSoon1() {
+        var some_html = '<img src="assets/example/celpfinal.png" width="100px"/><br />';
+        some_html += "<h3>Cool! Looks like you're interested! Sign up today to get Celp!</h3>";
+        bootbox.alert(some_html);
+      }
+
+      function comingSoon2() {
+        var some_html = '<img src="assets/example/celpfinal.png" width="100px"/><br />';
+        some_html += "<h3>Sweet! Celp is accepting new accounts for a limited time, sign up now!!</h3>";
         bootbox.alert(some_html);
       }
     </script>
