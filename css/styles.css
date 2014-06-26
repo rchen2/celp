@@ -65,8 +65,9 @@ a.list-group-item.active,[class*='-info'] {
 }
  
 #section1 {
-    background-color: #e5e5ef;
-    color:#686868;
+    /*background-color: #e5e5ef;*/
+    /*color:#686868;*/
+    color:#FFFFFF;
 }
 
 #section2 {
